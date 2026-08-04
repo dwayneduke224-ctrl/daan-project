@@ -1,0 +1,212 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+}
+
+body{
+background:#f4f4f4;
+color:#222;
+}
+
+header{
+background:#e2231a;
+color:white;
+padding-bottom:60px;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+}
+
+.logo{
+font-size:28px;
+font-weight:bold;
+}
+
+.navbar ul{
+display:flex;
+list-style:none;
+}
+
+.navbar li{
+margin-left:30px;
+}
+
+.navbar a{
+text-decoration:none;
+color:white;
+font-weight:500;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:70px 10%;
+}
+
+.hero-text{
+width:50%;
+}
+
+.hero-text h1{
+font-size:55px;
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+line-height:1.7;
+margin-bottom:30px;
+}
+
+.btn{
+background:white;
+color:#e2231a;
+padding:15px 35px;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
+}
+
+.hero-image{
+width:45%;
+text-align:right;
+}
+
+.hero-image img{
+width:100%;
+max-width:550px;
+}
+
+/* Products */
+
+#products{
+padding:80px 10%;
+text-align:center;
+}
+
+#products h2{
+font-size:40px;
+margin-bottom:50px;
+}
+
+.product-container{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+width:320px;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:contain;
+}
+
+.card h3{
+margin:20px 0;
+}
+
+.card p{
+margin-bottom:20px;
+}
+
+.card button{
+padding:12px 25px;
+border:none;
+background:#e2231a;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+/* Contact */
+
+#contact{
+padding:80px 10%;
+background:white;
+}
+
+#contact h2{
+text-align:center;
+margin-bottom:40px;
+font-size:40px;
+}
+
+form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+input,
+textarea{
+padding:15px;
+margin-bottom:20px;
+border:1px solid #ccc;
+border-radius:5px;
+}
+
+textarea{
+height:150px;
+resize:none;
+}
+
+form button{
+padding:15px;
+background:#e2231a;
+color:white;
+border:none;
+cursor:pointer;
+font-size:17px;
+border-radius:5px;
+}
+
+footer{
+background:#111;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero-text{
+width:100%;
+}
+
+.hero-image{
+width:100%;
+margin-top:40px;
+}
+
+.hero-text h1{
+font-size:40px;
+}
+
+}
